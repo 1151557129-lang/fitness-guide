@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>我的 - 健身动作指导</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="topbar"><h1>👤 我的</h1></div>
+
+    <div class="stats">
+      <div class="stat"><div class="num" id="statTotal">0</div><div class="label">动作总数</div></div>
+      <div class="stat"><div class="num" id="statFav">0</div><div class="label">收藏</div></div>
+      <div class="stat"><div class="num" id="statHist">0</div><div class="label">浏览历史</div></div>
+    </div>
+
+    <div class="tabs">
+      <div class="tab active" data-tab="fav">❤️ 收藏</div>
+      <div class="tab" data-tab="hist">🕘 历史</div>
+    </div>
+
+    <div class="ex-list" id="list"></div>
+    <div style="text-align:center; padding: 0 0 20px;">
+      <button id="clearHistBtn" class="clear-btn" style="display:none;">清除全部历史</button>
+    </div>
+  </div>
+
+  <div class="tabbar">
+    <a href="index.html"><span class="ico">🏠</span>首页</a>
+    <a href="exercises.html"><span class="ico">📋</span>动作库</a>
+    <a href="profile.html" class="active"><span class="ico">👤</span>我的</a>
+  </div>
+
+  <script src="data/exercises.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>

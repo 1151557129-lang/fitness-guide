@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>动作库 - 健身动作指导</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app">
+    <div class="topbar"><h1>📋 动作库</h1></div>
+
+    <div class="searchbar">
+      <input id="searchInput" type="text" placeholder="搜索动作名称 / 肌群 / 器械" autocomplete="off">
+      <button id="searchBtn">搜索</button>
+    </div>
+
+    <div class="chips" id="bodyPartChips"></div>
+    <div class="chips" id="equipmentChips"></div>
+
+    <div class="section-title" id="resultCount">全部动作</div>
+    <div class="ex-list" id="exList"></div>
+
+    <div style="text-align:center; padding: 8px 0 20px;">
+      <button id="loadMoreBtn" class="clear-btn" style="border-color:#FF6B35;color:#FF6B35;">加载更多</button>
+    </div>
+  </div>
+
+  <div class="tabbar">
+    <a href="index.html"><span class="ico">🏠</span>首页</a>
+    <a href="exercises.html" class="active"><span class="ico">📋</span>动作库</a>
+    <a href="profile.html"><span class="ico">👤</span>我的</a>
+  </div>
+
+  <script src="data/exercises.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/exercises.js"></script>
+</body>
+</html>
